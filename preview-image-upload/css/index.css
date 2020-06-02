@@ -1,0 +1,125 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html,body{
+    display: grid;
+    height: 100%;
+    place-items: center;
+}
+
+.container {
+    height: 350px;
+    width: 430px;
+    text-align: center;
+}
+
+.container .wrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    border: 2px dashed #c2cdda;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .image {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.wrapper .icon {
+    font-size: 100px;
+    color:#9658fe
+}
+
+.wrapper .text {
+    font-size: 20px;
+    color:#5B5B7B;
+    font-weight: 500;
+}
+
+.wrapper #cancel-btn {
+    position: absolute;
+    right: 15px;
+    top:15px;
+    font-size: 20px;
+    cursor: pointer;
+    color:#9658fe;
+    display: none;
+}
+
+.wrapper .file-name{
+    position: absolute;
+    bottom:0;
+    width: 100%;
+    color: #fff;
+    padding: 0;
+    font-size: 18px;
+    background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
+    border-bottom-right-radius:10px;
+    border-bottom-left-radius:10px;
+    /* display: none; */
+    height: 0;
+    transition: .5s;
+}
+
+.container #custom-btn {
+    margin-top: 30px;
+    width: 100%;
+    color:#fff;
+    font-weight: 500;
+    padding: 8px 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg,#3a8ffe 0%,#9658fe 100%);
+    border-radius: 25px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -ms-border-radius: 25px;
+    -o-border-radius: 25px;
+    border: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 18px;
+    display: block;
+}
+
+.active:hover #cancel-btn{
+    display: block;
+}
+
+.wrapper #cancel-btn:hover{
+    color:#e74c3c;
+}
+
+.active:hover .file-name {
+    height: auto;
+    padding: 8px 0;
+}

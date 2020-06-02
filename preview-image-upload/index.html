@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./plugins/font-awesome-4.7.0/css/font-awesome.css">
+    <title>上传中预览图片</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="image">
+                <img src="" alt="">
+            </div>
+            <div class="content">
+                <div class="icon">
+                    <i class="fa fa-cloud-upload"></i>
+                </div>
+                <div class="text">No file chosen,yet!</div>
+            </div>
+            <div id="cancel-btn">
+                <i class="fa fa-close"></i>
+            </div>
+            <div class="file-name">File name here</div>
+        </div>
+        <input type="file" id="default-btn" hidden>
+        <button id="custom-btn">Choose a file</button>
+        <!-- <progress id="Progress" value="0" max="100"></progress> -->
+    </div>
+<script src="./js/index.js"></script>
+</body>
+</html>
